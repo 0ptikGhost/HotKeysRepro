@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:bal="http://schemas.microsoft.com/wix/BalExtension">
+  <Bundle Name="HotKeysRepro" Version="1.0.0.0" Manufacturer="Repro" UpgradeCode="85e2273a-2095-44ea-829e-473c71a40fc9">
+    <BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.HyperlinkSidebarLicense">
+      <bal:WixStandardBootstrapperApplication LicenseUrl="https://license.url/repro/hotkeys/eula"/>
+    </BootstrapperApplicationRef>
+
+    <Chain>
+      <MsiPackage SourceFile="$(var.DoNothing.TargetPath)" />
+    </Chain>
+  </Bundle>
+</Wix>

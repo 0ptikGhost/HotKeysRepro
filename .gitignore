@@ -1,0 +1,5 @@
+**/*.suo
+DoNothing/bin
+DoNothing/obj
+HotKeysRepro/bin
+HotKeysRepro/obj
